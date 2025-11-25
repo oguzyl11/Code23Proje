@@ -31,16 +31,16 @@ Kullanıcı tarafından yüklenen uzun ve karmaşık PDF dosyalarını analiz et
 ### 1. Soru Cevap ve Kaynak Gösterimi
 Kullanıcı "Mazeret sınavı hakkı nedir?" diye sorduğunda sistemin verdiği kaynaklı cevap:
 
-![Soru Cevap Örneği](screenshots/1.hafta/Ekran görüntüsü 2025-11-25 092716.png)
+![Soru Cevap Örneği](screenshots/1.hafta/ss1.png)
 
-![Soru Cevap Örneği](screenshots/1.hafta/Ekran görüntüsü 2025-11-25 093540.png)
+![Soru Cevap Örneği](screenshots/1.hafta/ss3.png)
 
-![Soru Cevap Örneği](screenshots/1.hafta/Ekran görüntüsü 2025-11-25 093636.png)
+![Soru Cevap Örneği](screenshots/1.hafta/ss2.png)
 
 ### 2. Ayarlar ve Doküman Yükleme
 PDF yükleme alanı ve Chunk/k ayarları:
 
-![Ayarlar Menüsü](buraya_ikinci_resim_yolu.png)
+![Ayarlar Menüsü](screenshots/1.hafta/ayarlar.png)
 
 ## ⚙️ Kurulum ve Çalıştırma
 
