@@ -97,3 +97,27 @@ Aynı soruya MMR (Çeşitlilik) modunda verilen cevap ve kaynakların geniş da�
 **Test 2: Dürüstlük Kontrolü (Hallucination Check)**
 Metinde tam listesi olmayan bir soru sorulduğunda modelin "Bilmiyorum" deme yeteneği:
 ![Disiplin Sorusu](screenshots/2.hafta/ss1.png)
+
+
+
+---
+## 📚 3. Hafta: Çok Kaynaklı RAG (Multi-Source Retrieval)
+
+Projenin final aşamasında sistem, birden fazla PDF dokümanını aynı anda işleyip, sorulara bu belgeleri sentezleyerek cevap verecek hale getirilmiştir.
+
+### ✨ Eklenen Özellikler
+1.  **Çoklu Dosya Yükleme:**
+    * `st.file_uploader` güncellenerek `accept_multiple_files=True` yapıldı.
+    * Kullanıcı aynı anda Lisans Yönetmeliği ve Lisansüstü Danışmanlık Yönergesi gibi farklı belgeleri yükleyebilir.
+
+2.  **Metadata Tabanlı Kaynak Takibi:**
+    * Her metin parçasına (chunk) `metadata["source"]` etiketi eklendi.
+    * Bu sayede modelin hangi bilgiyi hangi dosyadan aldığı takip edilebilir hale geldi.
+
+3.  **Sentez Cevaplama:**
+    * Model, farklı dosyalardan gelen parçaları birleştirerek bütünleşik cevaplar üretir.
+
+### 📸 Test Sonucu (Kanıt)
+Aşağıdaki ekran görüntüsünde görüldüğü üzere, sistem tek bir soru için **iki farklı PDF dosyasından** (Kaynak 4 farklı, diğerleri farklı) parça getirmiş ve bunları kullanmıştır:
+
+![Çoklu Kaynak Kanıtı](screenshots/3.hafta/ss1.png)
