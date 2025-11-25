@@ -69,3 +69,31 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 * [x] Cevabın dayandığı kaynakların (Sayfa no) gösterilmesi.
 
 ---
+
+
+---
+## 🧠 2. Hafta: Gelişmiş RAG (MMR & Prompt Engineering)
+
+Bu aşamada sisteme "çeşitlilik" kazandırılmış ve cevap kalitesi artırılmıştır.
+
+### ✨ Yapılan Geliştirmeler
+1.  **MMR (Maximal Marginal Relevance) Entegrasyonu:**
+    * Sadece en benzer kelimeleri değil, anlamsal olarak farklı noktaları da taraması sağlandı.
+    * *Kanıt:* "Yönetmeliğin amacı" sorusunda Similarity yöntemi sadece 2. ve 6. sayfaya bakarken, MMR yöntemi 1., 6. ve 8. sayfalardan veri toplayarak daha kapsamlı bir özet çıkardı.
+
+2.  **Gelişmiş Prompt Tasarımı:**
+    * Modele *"Önce 1 cümlelik yönetici özeti çıkar, sonra detayları maddeleştir"* talimatı verildi.
+    * Cevapların okunabilirliği ve profesyonelliği artırıldı.
+
+3.  **Dinamik Parametreler:**
+    * Arayüz üzerinden `Similarity` vs `MMR` geçişi yapabilme özelliği eklendi.
+
+### 📸 Karşılaştırma Testleri
+
+**Test 1: MMR Farkı**
+Aynı soruya MMR (Çeşitlilik) modunda verilen cevap ve kaynakların geniş dağılımı:
+![MMR Örneği](screenshots/2.hafta/ss4.png)
+
+**Test 2: Dürüstlük Kontrolü (Hallucination Check)**
+Metinde tam listesi olmayan bir soru sorulduğunda modelin "Bilmiyorum" deme yeteneği:
+![Disiplin Sorusu](screenshots/2.hafta/ss1.png)
